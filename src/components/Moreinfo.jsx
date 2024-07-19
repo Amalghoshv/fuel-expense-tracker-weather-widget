@@ -24,7 +24,7 @@ const DateTimeDisplay = () => {
 
   useEffect(() => {
     if (currentData) {
-      console.log(currentData);
+  
     }
   }, [currentData]);
 
@@ -48,14 +48,17 @@ const DateTimeDisplay = () => {
         </div>
         
         <div className="weather">
-          <h3>
-            {currentData.location.name}
-          </h3>
-          <h3 className="temp">{currentData.current.temp_c}C</h3>
-          <img className="icon" src={currentData.current.condition.icon} alt="icon" />
-          <h5>{currentData.current.condition.text}</h5>
+          {currentData && currentData.location && currentData.current ? (
+            <>
+              <h3>{currentData.location.name}</h3>
+              <h3 className="temp">{currentData.current.temp_c}°C</h3>
+              <img className="icon" src={currentData.current.condition.icon} alt="Weather icon" />
+              <h5>{currentData.current.condition.text}</h5>
+            </>
+          ) : (
+            <p>Loading weather data...</p>
+          )}
         </div>
-
        
             </div>
       </div>

@@ -96,3 +96,24 @@ h5 {
     align-items: center;
   }
 }
+@media (min-width: 1600px) {
+  .boxes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .dateday {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    font-size:30x;
+    padding: 15px;
+  }
+  .date-time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
