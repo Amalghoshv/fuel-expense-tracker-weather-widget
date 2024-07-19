@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.dateday {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  font-size: 15x;
+  padding: 15px;
+}
+.date {
+  color: tomato;
+  font-family: "Anton", sans-serif;
+}
+.day {
+  color: white;
+  font-family: "Anton", sans-serif;
+}
+.time {
+  color: turquoise;
+  /* width: 30%; */
+  font-family: "Anton", sans-serif;
+}
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.date-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 35px;
+  text-align: center;
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: #c7bd95;
+  margin: 0;
+}
+.temp {
+  color: skyblue;
+  letter-spacing: 2px;
+  margin: 0;
+  font-size: 50px;
+}
+h5 {
+  text-align: center;
+  color: #77bbd5;
+  margin: 0;
+}
+
+
+.background-container2 {
+    position: relative;
+     /* Full viewport height */
+     
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.video-background2 {
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 120%;
+    height: 120%;
+    object-fit: unset;
+    z-index: -1; 
+}
+@media (min-width: 360px) {
+  .boxes {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media (min-width: 480px) {
+  .boxes {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 720px) {
+  .boxes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

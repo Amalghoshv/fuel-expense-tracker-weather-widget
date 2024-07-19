@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+body{
+
+  -webkit-animation: AnimationName 31s ease infinite;
+  -moz-animation: AnimationName 31s ease infinite;
+  animation: AnimationName 31s ease infinite;
+  font-family: "Expletus Sans", sans-serif;
+  /* background: linear-gradient(309deg, #8c2a14, #11094e, #104108, #0d906e); */
+  background-size: 800% 800%;
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 67%, rgba(0,0,0,1) 100%, rgba(6,6,6,1) 100%);
+}
