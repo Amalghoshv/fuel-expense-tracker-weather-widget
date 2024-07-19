@@ -8,7 +8,7 @@ const DateTimeDisplay = () => {
   useEffect(() => {
     axios
       .get(
-        "http://api.weatherapi.com/v1/current.json?key=b60b1ac296a54556a3c92432241707&q=kochi&aqi=no"
+        "https://api.weatherapi.com/v1/current.json?key=b60b1ac296a54556a3c92432241707&q=kochi&aqi=no"
       )
       .then((response) => setCurrentData(response.data))
       
